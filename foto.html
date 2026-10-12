@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto-foto David Joko</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS tambahan khusus galeri foto */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+        }
+
+        .gallery-caption {
+            padding: 10px;
+            font-size: 0.9rem;
+            text-align: center;
+            color: #555;
+        }
+
+        /* Modal Lightbox untuk memperbesar foto */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GALERI FOTO ASLAM</h1>
+    </header>
+
+    <div class="container" style="justify-content: center;">
+        <main style="max-width: 900px;">
+            <p style="text-align: center;">Koleksi dokumentasi foto kegiatan dan kenangan saya.</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="aslam (9).jpg" alt="Foto Diri" onclick="openLightbox(this.src)" onerror="this.src='https://via.placeholder.com/300x200?text=Foto+1'">
+                    <div class="gallery-caption">Kerja bakti</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="aslam (10).jpg" alt="Liburan Pantai" onclick="openLightbox(this.src)" onerror="this.src='https://via.placeholder.com/300x200?text=Foto+2'">
+                    <div class="gallery-caption">Suasana Pantai</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="aslam.jpg" alt="Kegiatan Bersama" onclick="openLightbox(this.src)" onerror="this.src='https://via.placeholder.com/300x200?text=Foto+3'">
+                    <div class="gallery-caption">Lapangan futsal </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="aslam (5).JPG" alt="Kegiatan Bersama" onclick="openLightbox(this.src)" onerror="this.src='https://via.placeholder.com/300x200?text=Foto+3'">
+                    <div class="gallery-caption">MPLS</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="aslam (8).JPG" alt="Kegiatan Bersama" onclick="openLightbox(this.src)" onerror="this.src='https://via.placeholder.com/300x200?text=Foto+3'">
+                    <div class="gallery-caption">Kumpul Asrama</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="aslam (7).JPG" alt="Kegiatan Bersama" onclick="openLightbox(this.src)" onerror="this.src='https://via.placeholder.com/300x200?text=Foto+3'">
+                    <div class="gallery-caption">Morning spirit</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="index.html" class="btn-back">&larr; Kembali ke halaman utama</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Enlarged Foto">
+    </div>
+
+    <footer>
+        <p>&copy; Website David Joko</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = src;
+            lightbox.style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
