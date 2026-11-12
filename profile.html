@@ -3,54 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil David Joko</title>
+    <title>Profil — Abdullah Aslam</title>
+    <meta name="description" content="Profil Abdullah Aslam: data diri, hobi, minat, dan jejak kegiatan di sekolah serta pondok pesantren.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d0d0d'/%3E%3Ctext x='32' y='44' font-family='Arial, sans-serif' font-size='34' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400..800&family=Inter:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>PROFIL PRIBADI</h1>
+    <a class="skip-link" href="#main">Lompat ke konten</a>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Navigasi utama">
+            <a class="nav-brand" href="index.html">
+                <span class="brand-avatar">
+                    <img src="IMG (241)1.jpeg" alt="Foto Abdullah Aslam" onerror="this.src='https://via.placeholder.com/72'">
+                </span>
+                <span class="brand-text">Aslam<small>Personal site</small></span>
+            </a>
+            <div class="nav-pill">
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="foto.html">Foto</a></li>
+                </ul>
+                <a class="btn btn-dark btn-sm nav-cta" href="profile.html">Kenalan</a>
+            </div>
+            <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
     </header>
 
-    <div class="container" style="justify-content: center;">
-        <main style="max-width: 600px;">
-            <h2 style="text-align: center; margin-bottom: 20px; color: #2a5298;">DATA PRIBADI</h2>
-            
-            <table class="profile-table">
-                <tr>
-                    <td>Nama:</td>
-                    <td>Abdullah Aslam</td>
-                </tr>
-                <tr>
-                    <td>Tempat/Tanggal Lahir:</td>
-                    <td>Sumenep, 23 Februari 2010</td>
-                </tr>
-                <tr>
-                    <td>Agama:</td>
-                    <td>Islam</td>
-                </tr>
-                <tr>
-                    <td>Gol. Darah:</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>Jenjang:</td>
-                    <td>SMA</td>
-                </tr>
-                <tr>
-                    <td>Hobi:</td>
-                    <td>Futsal, Berenang. </td>
-                </tr>
-            </table>
-
-            <div style="text-align: center; margin-top: 25px;">
-                <a href="index.html" class="btn-back">&larr; Kembali ke halaman utama</a>
-            </div>
-        </main>
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Beranda <span class="idx">01</span></a></li>
+            <li><a href="profile.html">Profil <span class="idx">02</span></a></li>
+            <li><a href="kegiatan.html">Kegiatan <span class="idx">03</span></a></li>
+            <li><a href="foto.html">Foto <span class="idx">04</span></a></li>
+        </ul>
+        <div class="mobile-nav-foot">
+            <span>Sumenep, Jawa Timur</span>
+            <a class="btn btn-dark" href="kegiatan.html">
+                Lihat kegiatan
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
     </div>
 
-    <footer>
-        <p>&copy; Website Aslam</p>
+    <main id="main">
+
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-main">
+                    <p class="eyebrow">Profil — 02</p>
+                    <h1 class="hero-title">
+                        <span class="line">Tentang</span>
+                        <span class="line">Abdullah.</span>
+                        <span class="line hero-roles">data diri. hobi. jejak kegiatan.</span>
+                    </h1>
+
+                    <div class="hero-bottom">
+                        <p class="hero-copy">
+                            Data diri, hobi, dan jejak kegiatan yang saya simpan rapi di satu halaman.
+                            Bagian ini adalah versi paling lengkap tentang siapa saya.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn btn-dark" href="kegiatan.html">
+                                Lihat kegiatan
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8h9M8.5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                            <a class="btn btn-light" href="foto.html">Galeri foto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="badge-scene" aria-hidden="true">
+                    <span class="lanyard">Abdullah Aslam · Profil · 2026</span>
+                    <div class="badge-card">
+                        <div class="badge-photo">
+                            <img src="IMG (241)1.jpeg" alt="">
+                        </div>
+                        <div class="badge-info">
+                            <span class="badge-tag">Profil · 02</span>
+                            <strong>Abdullah Aslam</strong>
+                            <span class="badge-role">Pelajar &amp; Santri</span>
+                        </div>
+                        <span class="badge-code">ID · 023 · SMN</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marquee-wrap">
+                <div class="container">
+                    <p class="marquee-label">Hal-hal yang saya sukai</p>
+                </div>
+                <div class="marquee" aria-hidden="true">
+                    <div class="marquee-track">
+                        <div class="marquee-group">
+                            <span class="marquee-item">Futsal</span><span class="dot"></span>
+                            <span class="marquee-item">Berenang</span><span class="dot"></span>
+                            <span class="marquee-item">Menulis puisi</span><span class="dot"></span>
+                            <span class="marquee-item">Pondok Taisirur Rahman</span><span class="dot"></span>
+                            <span class="marquee-item">SMA</span><span class="dot"></span>
+                            <span class="marquee-item">Sumenep</span><span class="dot"></span>
+                            <span class="marquee-item">Kebersamaan asrama</span><span class="dot"></span>
+                            <span class="marquee-item">Cerita harian</span><span class="dot"></span>
+                        </div>
+                        <div class="marquee-group">
+                            <span class="marquee-item">Futsal</span><span class="dot"></span>
+                            <span class="marquee-item">Berenang</span><span class="dot"></span>
+                            <span class="marquee-item">Menulis puisi</span><span class="dot"></span>
+                            <span class="marquee-item">Pondok Taisirur Rahman</span><span class="dot"></span>
+                            <span class="marquee-item">SMA</span><span class="dot"></span>
+                            <span class="marquee-item">Sumenep</span><span class="dot"></span>
+                            <span class="marquee-item">Kebersamaan asrama</span><span class="dot"></span>
+                            <span class="marquee-item">Cerita harian</span><span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <p class="eyebrow">Data diri</p>
+                    <h2>Kenalan lebih dekat.</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-media" data-reveal>
+                        <div class="portrait-card">
+                            <img src="IMG (241)1.jpeg" alt="Potret Abdullah Aslam" loading="lazy" onerror="this.src='https://via.placeholder.com/720x900?text=Foto+Aslam'">
+                            <div class="portrait-foot">
+                                <span>Abdullah Aslam</span>
+                                <span>Sumenep, 2010</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <div data-reveal>
+                            <p class="about-lead">
+                                Saya Abdullah Aslam, lahir di Sumenep pada 23 Februari 2010.
+                                Saat ini saya menempuh pendidikan SMA sambil tinggal di pondok pesantren.
+                            </p>
+                            <p>
+                                Di luar jam sekolah, saya biasanya bermain futsal, berenang, atau
+                                menulis puisi. Saya suka hal-hal yang tenang dan sederhana, dan
+                                percaya bahwa cerita yang jujur selalu punya tempatnya sendiri.
+                            </p>
+                        </div>
+
+                        <dl class="fact-list" data-reveal style="--d:.08s">
+                            <div class="fact-row">
+                                <dt>Nama lengkap</dt>
+                                <dd>Abdullah Aslam</dd>
+                            </div>
+                            <div class="fact-row">
+                                <dt>Tempat, tanggal lahir</dt>
+                                <dd>Sumenep, 23 Februari 2010</dd>
+                            </div>
+                            <div class="fact-row">
+                                <dt>Agama</dt>
+                                <dd>Islam</dd>
+                            </div>
+                            <div class="fact-row">
+                                <dt>Golongan darah</dt>
+                                <dd>&mdash;</dd>
+                            </div>
+                            <div class="fact-row">
+                                <dt>Jenjang</dt>
+                                <dd>SMA</dd>
+                            </div>
+                            <div class="fact-row">
+                                <dt>Hobi</dt>
+                                <dd>Futsal, berenang, menulis puisi</dd>
+                            </div>
+                        </dl>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-line">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <p class="eyebrow">Hobi &amp; minat</p>
+                    <h2>Hal yang saya nikmati.</h2>
+                    <p>Tiga hal sederhana yang selalu menyita waktu luang saya.</p>
+                </div>
+
+                <div class="rows" data-reveal>
+                    <div class="row">
+                        <h3>Futsal</h3>
+                        <p>Olahraga tim yang mengajarkan saya soal kerja sama, ritme, dan tidak cepat menyerah.</p>
+                        <span class="row-tag">Olahraga</span>
+                    </div>
+                    <div class="row">
+                        <h3>Berenang</h3>
+                        <p>Cara paling menyenangkan untuk menyegarkan pikiran setelah hari yang panjang.</p>
+                        <span class="row-tag">Aktivitas</span>
+                    </div>
+                    <div class="row">
+                        <h3>Menulis puisi</h3>
+                        <p>Tempat saya merapikan perasaan dan menuangkannya dalam baris-baris pendek.</p>
+                        <span class="row-tag">Karya</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-line">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <p class="eyebrow">Jejak kegiatan</p>
+                    <h2>Momen yang saya ingat.</h2>
+                    <p>Catatan singkat dari kegiatan yang paling berkesan selama di pondok dan sekolah.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-reveal>
+                        <span class="timeline-label">Awal masuk pondok</span>
+                        <div class="timeline-body">
+                            <h3>Futsal bersama ustadz dan teman-teman</h3>
+                            <p>
+                                Kami diajak futsal oleh ustadz, dibagi ke beberapa tim, lalu bermain
+                                sampai puas. Momen ini jadi cara kami saling mengenal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal style="--d:.06s">
+                        <span class="timeline-label">Akhir semester</span>
+                        <div class="timeline-body">
+                            <h3>Pembagian rapor dan foto bersama</h3>
+                            <p>
+                                Sebelum pulang, malamnya ada pembagian rapor dan sesi foto bersama
+                                asrama dan kelas masing-masing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal style="--d:.12s">
+                        <span class="timeline-label">Akhir tahun 2025</span>
+                        <div class="timeline-body">
+                            <h3>Rihlah akhir semester ke Goa Lawa</h3>
+                            <p>
+                                Pondok Pesantren Taisirur Rahman mengadakan rihlah ke Goa Lawa,
+                                Purbolinggo. Kami berkemah dan bermalam di sana.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cta-card" data-reveal>
+                    <p class="eyebrow">Selanjutnya</p>
+                    <h2>Lihat kegiatan saya.</h2>
+                    <p>
+                        Ada cerita di balik setiap foto. Buka halaman kegiatan untuk membaca
+                        pengalaman saya selama di pondok dan sekolah.
+                    </p>
+                    <div class="cta-actions">
+                        <a class="btn btn-dark" href="kegiatan.html">
+                            Buka kegiatan
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8h9M8.5 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a class="btn btn-light" href="index.html">Kembali ke beranda</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <p class="eyebrow">Personal site</p>
+                    <h2 class="footer-title">Terima kasih sudah mampir.</h2>
+                    <p class="footer-copy">
+                        Website ini dibuat sederhana, seperti catatan harian yang dibagikan.
+                        Semoga ada satu hal kecil yang bisa kamu bawa pulang.
+                    </p>
+                </div>
+                <nav class="footer-nav" aria-label="Navigasi footer">
+                    <a href="index.html">Beranda <span>01</span></a>
+                    <a href="profile.html">Profil <span>02</span></a>
+                    <a href="kegiatan.html">Kegiatan <span>03</span></a>
+                    <a href="foto.html">Foto <span>04</span></a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> Abdullah Aslam</span>
+                <span>Sumenep, Jawa Timur</span>
+                <span>Dibuat dengan HTML, CSS &amp; JavaScript</span>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
